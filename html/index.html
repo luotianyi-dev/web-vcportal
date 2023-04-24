@@ -1,0 +1,30 @@
+{% extends "_layout.html" %}
+{% block title %}     {{ name }}{% endblock %}
+{% block full_title %}{{ name }}{% endblock %}
+
+{% block content %}
+    {% for group in groups %}
+        <section>
+            <h2>{{ group.name }}</h2>
+            <div class="site-group grid-box">
+                {% for site in group.sites %}
+                    <a target="_blank" class="site grid-box-item" href="{{ site.url }}">
+                        {% if site.get("icon") %}
+                            {% if site.get("circle") %}
+                                <img referrerpolicy="no-referrer" src="{{ cdn(site.icon) }}" alt="{{ site.name }}" class="grid-box-image grid-box-image-circle">
+                            {% else %}
+                                <img referrerpolicy="no-referrer" src="{{ cdn(site.icon) }}" alt="{{ site.name }}" class="grid-box-image">
+                            {% endif %}
+                        {% else %}
+                            <img class="grid-box-image grid-box-image-hidden">
+                        {% endif %}
+                        <div class="site-content grid-box-content">
+                            <span class="site-title grid-box-title">{{ site.name }}</span>
+                            <span class="site-description grid-box-description">{{ site.description }}</span>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+    {% endfor %}
+{% endblock %}

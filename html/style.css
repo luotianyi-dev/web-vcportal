@@ -1,0 +1,260 @@
+body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+        "Source Han Sans SC", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+code,
+pre,
+.code {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+button,
+a.button {
+    outline: none;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: .8em .2em;
+    padding: .5em 1em;
+    background: none;
+    border: 1px solid #c3c3c3;
+    transition: .2s;
+    border-radius: .8em;
+    color: #0c0c0c;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+button:hover,
+a.button:hover {
+    cursor: pointer;
+    background: #e8e8e8;
+    transition: .2s;
+}
+
+small,
+.small {
+    font-size: .8em !important;
+}
+
+main {
+    max-width: 960px;
+}
+
+main.min-frame {
+    min-width: 960px;
+    width: 960px;
+}
+
+@media screen and (min-width: 960px) {
+    main {
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 640px) {
+    main {
+        margin: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        margin: 30px 10px;
+    }
+}
+
+/* header & footer */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>h1 {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+header>h1>img {
+    width: 1em;
+    padding-right: .5em;
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+footer {
+    padding-top: 138px;
+    padding-bottom: 1rem;
+    font-size: .8em;
+    color: #939393;
+    text-align: center;
+}
+
+footer a {
+    color: #939393;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #c3c3c3;
+    text-decoration: underline;
+}
+
+/* grid-boxview */
+.grid-box {
+    max-width: 960px;
+    grid-gap: 30px;
+    display: grid;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 960px) {
+    .grid-box {
+        grid-template-columns: 180px 180px 180px 180px 180px;
+        grid-gap: 15px;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+    .grid-box {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 640px) {
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+        font-size: 14px;
+    }
+
+    .grid-box-image {
+        display: none;
+    }
+
+    .grid-box-content {
+        padding-left: 8px;
+    }
+}
+
+.grid-box .grid-box-item {
+    display: flex;
+    height: 58px;
+    border: 1px solid #c3c3c3;
+    border-radius: .8em;
+    align-items: center;
+    transition: .2s;
+    color: black;
+    text-decoration: none;
+}
+
+.grid-box .grid-box-item:hover {
+    cursor: pointer;
+    background: #e8e8e8;
+    transition: .2s;
+}
+
+.grid-box .grid-box-image {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 28px;
+    height: 28px;
+}
+
+.grid-box .grid-box-image-circle {
+    border-radius: 50%;
+}
+
+.grid-box .grid-box-image-hidden {
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.grid-box .grid-box-title {
+    display: block;
+}
+
+.grid-box .grid-box-label {
+    font-size: .75rem;
+    background: #939393;
+    color: white;
+    padding: .2em .5em;
+    border-radius: .8em;
+}
+
+.grid-box .grid-box-description {
+    display: block;
+    color: #939393;
+    font-size: .75rem;
+}
+
+.grid-box .grid-box-util-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* form */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="search"] {
+    display: block;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-size: .8rem;
+    padding: .5em 1em;
+    background: none;
+    border: 1px solid #c3c3c3;
+    transition: .2s;
+    border-radius: .8em;
+    color: #0c0c0c;
+    text-decoration: none;
+    margin-bottom: 3em;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="url"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover,
+input[type="search"]:hover {
+    border: 1px solid #0c0c0c;
+    transition: .2s;
+}
+
+label,
+.label {
+    color: #939393;
+    font-weight: 400;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="google" content="notranslate">
+    <title>{% block full_title %}{% endblock %}</title>
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>{% block title %}{% endblock %}</h1>
+            <aside>
+                <a class="button" href="/">首页</a>
+                <a class="button" href="about.html">关于</a>
+            </aside>
+        </header>
+        <article>
+            {% block content %}
+            {% endblock %}
+        </article>
+        <footer>
+            <p>
+                &copy; {{ now.strftime('%Y') }} {{ name }} GPL 3.0 Only License <br>
+                <a href="mailto:{{ contact }}" rel="email">联系我们</a> | <a target="_blank" href="https://github.com/luotianyi-dev/web-vcportal">GitHub</a>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>

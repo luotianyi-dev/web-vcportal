@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "vcportal"
+version = "1.0.0"
+description = "VC 导航站"
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyyaml = "^6.0"
+jinja2 = "^3.1.2"
+markdown = "^3.4.3"
+htmlmin = "^0.1.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

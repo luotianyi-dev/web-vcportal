@@ -1,0 +1,7 @@
+{% extends "_layout.html" %}
+{% block title %}     {{ metadata.title[0] }}{% endblock %}
+{% block full_title %}{{ metadata.title[0] }} | {{ name }}{% endblock %}
+
+{% block content %}
+    {{ markdown | safe }}
+{% endblock %}
