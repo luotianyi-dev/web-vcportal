@@ -22,7 +22,7 @@ def main():
     manifest = read_manifest()
     jinja_env = Environment(loader=FileSystemLoader(SOURCE))
     jinja_env.globals["now"] = datetime.now()
-    jinja_env.globals["cdn"] = lambda url: url if url.startswith("http") else f"{arguments.cdn.rstrip('/')}/{url.lstrip('/')}"
+    jinja_env.globals["cdn"] = lambda base, url: url if url.startswith("http") else f"{arguments.cdn.rstrip('/')}/{base}{url.lstrip('/')}"
 
     print("Source:", SOURCE)
     print("Target:", TARGET)
@@ -80,7 +80,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--source", default=SOURCE)
     parser.add_argument("--target", default=TARGET)
     parser.add_argument("--clean", action="store_true", default=False, help="Clean target directory before rendering")
-    parser.add_argument("--cdn", default="assets/icon")
+    parser.add_argument("--cdn", default="assets")
     return parser.parse_args()
 
 
