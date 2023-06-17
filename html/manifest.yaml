@@ -7,6 +7,7 @@ groups:
         icon: infinity.svg
         description: 官方创作交流平台
         url: https://docs.qq.com/sheet/DSmtYc3RSaHRFT1VH
+        reverse_color: true
       - name: VSQX分享平台
         icon: vsqx.top.jpg
         description: 调音工程分享网站
@@ -33,6 +34,7 @@ groups:
         icon: u-solid.svg
         description: 调教工程转换器
         url: https://sdercolin.github.io/utaformatix3/
+        reverse_color: true
       - name: VocalRemover
         icon: https://vocalremover.org/favicon.ico
         description: AI人声伴奏分离
@@ -41,6 +43,7 @@ groups:
         icon: 719.svg
         description: 719的BPM检测器
         url: https://baka719.top/v_beginner/
+        reverse_color: true
       - name: MikuMikuAR
         icon: https://www.mikumikuar.com/favicon.ico
         description: 手机MMD播放软件
@@ -56,6 +59,7 @@ groups:
       - name: AV/BV号转换
         icon: av2bv.svg
         description: 转换AV/BV号
+        reverse_color: true
         url: https://mrhso.github.io/IshisashiWebsite/BVwhodoneit/
       - name: WantWords
         icon: wantwords.ico
@@ -69,12 +73,14 @@ groups:
         icon: cleanup_pictures.png
         description: AI移除图片中物体
         url: https://cleanup.pictures/
+        reverse_color: true
   - name: 软件下载
     sites:
       - name: VocaKey
         icon: vocakey.svg
         description: B 站官方账号
         url: http://vocakey.info/
+        reverse_color: true
       - name: VC资源分享
         icon: https://storage.josephcz.xyz/favicon.ico
         description: 由 Joseph 提供
@@ -100,7 +106,9 @@ groups:
         icon: cvseplus.png
         description: 国产引擎排行榜
         url: https://space.bilibili.com/151439645
-      - name: 周刊虚拟歌手<br>中文曲排行榜
+      - name: |
+          周刊虚拟歌手
+          中文曲排行榜
         url: https://space.bilibili.com/156489
       - name: 洛天依新曲排行榜
         url: https://space.bilibili.com/24615264/channel/collectiondetail?sid=741972
@@ -108,11 +116,15 @@ groups:
         url: https://space.bilibili.com/67946083/channel/collectiondetail?sid=737329
   - name: 同人团体
     sites:
-      - name: 洛天依相关<br>收集站
+      - name: |
+          洛天依相关
+          收集站
         circle: true
         icon: https://i1.hdslb.com/bfs/face/7f766f409258d4c011bdee4730b8d2217bf3d40a.jpg
         url: https://space.bilibili.com/34727551
-      - name: 乐正绫相关<br>收集站
+      - name: |
+          乐正绫相关
+          收集站
         circle: true
         icon: https://i2.hdslb.com/bfs/face/baf8a50df947a9e772686952a5adfd87cc1a4ac9.jpg
         url: https://space.bilibili.com/347392364
@@ -128,10 +140,13 @@ groups:
         circle: true
         icon: https://i0.hdslb.com/bfs/face/df9d8ae3c63aad607ff5c3dd014cec82e50fcc31.jpg
         url: https://space.bilibili.com/323657769
-      - name: 中V宝藏<br>歌曲挖掘站
+      - name: |
+          中V宝藏
+          歌曲挖掘站
         circle: true
         icon: vcmusic.org.svg
         url: https://space.bilibili.com/526975910
+        white_background: true
   - name: 同人网站
     sites:
       - name: iVocaloid论坛
@@ -146,6 +161,7 @@ groups:
         description: SV的非官方教程
         icon: manual.svg
         url: https://synthesizer-v-r2-docs.vercel.app/
+        reverse_color: true
       - name: 小初音工作室
         description: Q版Flash动画
         icon: mikustudio.png
@@ -184,6 +200,7 @@ groups:
       - name: Vsinger
         icon: https://vsinger.com/favicon.ico
         url: https://vsinger.com/
+        white_background: true
       - name: 初音未来
         description: 官方微博
         circle: true

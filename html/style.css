@@ -180,8 +180,8 @@ footer a:hover {
 }
 
 .grid-box .grid-box-image {
-    padding-left: 6px;
-    padding-right: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
     width: 28px;
     height: 28px;
 }
@@ -257,4 +257,59 @@ label,
 .label {
     color: #939393;
     font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background: #0c0c0c;
+        color: #fff;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="search"] {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    input[type="text"]:hover,
+    input[type="password"]:hover,
+    input[type="email"]:hover,
+    input[type="url"]:hover,
+    input[type="tel"]:hover,
+    input[type="number"]:hover,
+    input[type="search"]:hover {
+        border: 1px solid #5c5c5c;
+    }
+
+    button,
+    a.button {
+        background: #0c0c0c;
+        color: #fff;
+    }
+
+    button:hover,
+    a.button:hover {
+        background: #5c5c5c;
+    }
+
+    .grid-box .grid-box-item {
+        color: #fff;
+    }
+
+    .grid-box .grid-box-item:hover {
+        background: #5c5c5c;
+    }
+
+    .grid-box-image-reverse-color {
+        filter: invert(1);
+    }
+
+    .grid-box-image-white-background {
+        background: #fff;
+    }
 }

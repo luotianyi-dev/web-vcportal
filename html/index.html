@@ -9,17 +9,19 @@
             <div class="site-group grid-box">
                 {% for site in group.sites %}
                     <a target="_blank" class="site grid-box-item" href="{{ site.url }}">
-                        {% if site.get("icon") %}
-                            {% if site.get("circle") %}
-                                <img referrerpolicy="no-referrer" src="{{ cdn('icon/', site.icon) }}" alt="{{ site.name }}" class="grid-box-image grid-box-image-circle">
-                            {% else %}
-                                <img referrerpolicy="no-referrer" src="{{ cdn('icon/', site.icon) }}" alt="{{ site.name }}" class="grid-box-image">
+                        <img referrerpolicy="no-referrer" alt="{{ site.name }}"
+                            {% if site.get("icon") %}
+                                src="{{ cdn('icon/', site.icon) }}"
                             {% endif %}
-                        {% else %}
-                            <img class="grid-box-image grid-box-image-hidden">
-                        {% endif %}
+                            class="{{" ".join(" ".join([
+                                "grid-box-image",
+                                ("grid-box-image-hidden"           if not site.get("icon")             else ""),
+                                ("grid-box-image-circle"           if     site.get("circle")           else ""),
+                                ("grid-box-image-reverse-color"    if     site.get("reverse_color")    else ""),
+                                ("grid-box-image-white-background" if     site.get("white_background") else ""),
+                            ]).split())}}">
                         <div class="site-content grid-box-content">
-                            <span class="site-title grid-box-title">{{ site.name }}</span>
+                            <span class="site-title grid-box-title">{{ site.name.strip().replace("\n", "<br>") }}</span>
                             <span class="site-description grid-box-description">{{ site.description }}</span>
                         </div>
                     </a>
