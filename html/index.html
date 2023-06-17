@@ -9,8 +9,9 @@
             <div class="site-group grid-box">
                 {% for site in group.sites %}
                     <a target="_blank" class="site grid-box-item" href="{{ site.url }}">
-                        <img referrerpolicy="no-referrer" alt="{{ site.name }}"
+                        <img referrerpolicy="no-referrer"
                             {% if site.get("icon") %}
+                                alt="{{ site.name }}"
                                 src="{{ cdn('icon/', site.icon) }}"
                             {% endif %}
                             class="{{" ".join(" ".join([
