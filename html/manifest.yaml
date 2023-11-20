@@ -74,6 +74,10 @@ groups:
         description: AI移除图片中物体
         url: https://cleanup.pictures/
         reverse_color: true
+      - name: 歌词字幕转换
+        icon: lrccon.png
+        description: 歌词字幕转换
+        url: https://www.lrccon.com/convert.php 
   - name: 软件下载
     sites:
       - name: VocaKey
