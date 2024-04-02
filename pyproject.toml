@@ -1,0 +1,19 @@
+[project]
+name = "web-vcportal"
+version = "0"
+authors = [
+    {name = "Tianyi Network"}
+]
+dependencies = [
+    "portal @ git+https://github.com/baobao1270/portal.git",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true

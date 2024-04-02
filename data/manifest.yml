@@ -1,0 +1,313 @@
+site:
+  name: VC 导航站
+  lang: zh-CN
+  description: ""
+  footer: |
+    &copy; 2024 <a href="https://luotianyi.dev">Tianyi Network</a>
+    <a rel="license" href="https://github.com/luotianyi-dev/web-vcportal/blob/main/LICENSE">MPL 2.0 License</a>
+    <br>
+    <a href="/about">关于我们</a> | <a href="mailto:lty@luotianyi.dev">联系我们</a> | <a href="https://github.com/luotianyi-dev/web-vcportal">开放源码</a>
+
+topbar:
+  - name: 首页
+    url: /
+  - name: 关于
+    url: /about
+
+tags:
+
+groups:
+  - name: 创作交流
+    sites:
+      - name: 天依心声代理站
+        icon: infinity.svg
+        description: 官方创作交流平台
+        url: https://docs.qq.com/sheet/DSmtYc3RSaHRFT1VH
+        icon_effects: [dark-invert]
+      - name: VSQX分享平台
+        icon: vsqx.top.jpg
+        description: 调音工程分享网站
+        url: https://www.vsqx.top
+      - name: MuseSource
+        icon: https://musescore.org/favicon.ico
+        description: 制谱软件乐谱下载
+        url: https://musescore.org/
+      - name: MidiShow
+        icon: midishow.png
+        description: MIDI交流下载
+        url: https://www.midishow.com/
+      - name: 模之屋
+        icon: https://www.aplaybox.com/favicon.ico
+        description: 模型创作分享社区
+        url: https://www.aplaybox.com/
+      - name: Pixiv
+        icon: https://www.pixiv.net/favicon.ico
+        description: 插画交流网站
+        url: https://www.pixiv.net/
+  - name: 工具网站
+    sites:
+      - name: UtaFormatix
+        icon: u-solid.svg
+        description: 调教工程转换器
+        url: https://sdercolin.github.io/utaformatix3/
+        icon_effects: [dark-invert]
+      - name: VocalRemover
+        icon: https://vocalremover.org/favicon.ico
+        description: AI人声伴奏分离
+        url: https://vocalremover.org/zh/?patrons
+      - name: BPM Estimater
+        icon: 719.svg
+        description: 719的BPM检测器
+        url: https://baka719.top/v_beginner/
+        icon_effects: [dark-invert]
+      - name: MikuMikuAR
+        icon: https://www.mikumikuar.com/favicon.ico
+        description: 手机MMD播放软件
+        url: https://www.mikumikuar.com/
+      - name: 灯里歌词滚动姬
+        icon: https://lrc-maker.github.io/favicons/apple-touch-icon.png
+        description: LRC制作软件
+        url: https://lrc-maker.github.io/
+      - name: SauceNAO
+        icon: https://saucenao.com/favicon.ico
+        description: AI图源查找网站
+        url: https://saucenao.com/
+      - name: AV/BV号转换
+        icon: av2bv.svg
+        description: 转换AV/BV号
+        icon_effects: [dark-invert]
+        url: https://mrhso.github.io/IshisashiWebsite/BVwhodoneit/
+      - name: WantWords
+        icon: wantwords.ico
+        description: 中英文反义词查找
+        url: https://wantwords.net/
+      - name: 邻近词汇检索
+        icon: wantwords.ico
+        description: 中英文同义词查找
+        url: https://tool.mingdawoo.com/lang/nearby_word/
+      - name: 除你背景
+        icon: cleanup_pictures.png
+        description: AI移除图片中物体
+        url: https://cleanup.pictures/
+        icon_effects: [dark-invert]
+      - name: 歌词字幕转换
+        icon: lrccon.png
+        description: 歌词字幕转换
+        url: https://www.lrccon.com/convert.php
+  - name: 软件下载
+    sites:
+      - name: VocaKey
+        icon: vocakey.svg
+        description: 可能炸了
+        url: http://vocakey.info/
+        icon_effects: [dark-invert]
+      - name: VC资源分享
+        icon: https://storage.josephcz.xyz/favicon.ico
+        description: 由 Joseph 提供
+        url: https://storage.josephcz.xyz/TianyiWorkstation/
+  - name: 教程分享
+    sites:
+      - name: 调教教程导航贴
+        description: By 龙猫
+        url: https://t.bilibili.com/608079597169238889
+      - name: 歌声合成教程站
+        description: By Haru.jpg
+        url: https://vocalsynth.harujpg.top
+      - name: 音频技术导论
+        description: By Ltyxh
+        url: https://ltyxh.com/blog/2022/05/12/%E9%9F%B3%E9%A2%91%E6%8A%80%E6%9C%AF1/
+  - name: 数据分析
+    sites:
+      - name: 天钿Daily
+        icon: tdd.png
+        description: VC数据交流分享
+        url: https://tdd.bunnyxt.com/
+      - name: CVSE+
+        icon: cvseplus.png
+        description: 国产引擎排行榜
+        url: https://space.bilibili.com/151439645
+      - name: 中文虚拟歌手周刊
+        url: https://space.bilibili.com/156489
+      - name: 洛天依新曲排行榜
+        url: https://space.bilibili.com/24615264/channel/collectiondetail?sid=741972
+      - name: 言和新曲排行榜
+        url: https://space.bilibili.com/67946083/channel/collectiondetail?sid=737329
+  - name: 同人团体
+    sites:
+      - name: 洛天依相关收集站
+        icon: https://i1.hdslb.com/bfs/face/7f766f409258d4c011bdee4730b8d2217bf3d40a.jpg
+        url: https://space.bilibili.com/34727551
+        icon_effects: [circle]
+      - name: 乐正绫相关收集站
+        icon: https://i2.hdslb.com/bfs/face/baf8a50df947a9e772686952a5adfd87cc1a4ac9.jpg
+        url: https://space.bilibili.com/347392364
+        icon_effects: [circle]
+      - name: 心华相关收集站
+        icon: https://i1.hdslb.com/bfs/face/3b50e431f9db5519c86ca55401de02919a78a212.jpg
+        url: https://space.bilibili.com/285330217
+        icon_effects: [circle]
+      - name: 南北同萌培养姬
+        icon: https://i1.hdslb.com/bfs/face/58c0194438b9bdfb132f28525628f1e64eee30a8.jpg
+        url: https://space.bilibili.com/381680134
+        icon_effects: [circle]
+      - name: 瓜果瓜秧电视台
+        icon: https://i0.hdslb.com/bfs/face/df9d8ae3c63aad607ff5c3dd014cec82e50fcc31.jpg
+        url: https://space.bilibili.com/323657769
+        icon_effects: [circle]
+      - name: 中V宝藏歌曲挖掘站
+        icon: vcmusic.org.svg
+        url: https://space.bilibili.com/526975910
+        icon_effects: [circle, dark-whiteback]
+  - name: 同人网站
+    sites:
+      - name: iVocaloid论坛
+        description: 古早V家交流论坛
+        icon: ivocaloid.ico
+        url: http://bbs.ivocaloid.com/
+      - name: VocaDB
+        description: 虚拟歌手数据库
+        icon: vocadb.ico
+        url: https://vocadb.net/
+      - name: SV用户手册
+        description: SV的非官方教程
+        icon: manual.svg
+        url: https://synthesizer-v-r2-docs.vercel.app/
+        reverse_color: true
+      - name: 小初音工作室
+        description: Q版Flash动画
+        icon: mikustudio.png
+        url: https://www.deviantart.com/johnsu/art/Halfne-Miku-Studio-396850314
+      - name: MikuTap
+        description: 让Miku酱陪你唱歌
+        icon: mikutap.ico
+        url: https://aidn.jp/mikutap/
+      - name: TianyiTap
+        description: 多歌姬版的MikuTap
+        icon: tianyitap.ico
+        url: https://tianyitap.com/
+      - name: OpenSynth
+        description: 自制合成引擎Wiki
+        icon: opensynth.ico
+        url: https://opensynth.miraheze.org/
+      - name: 洛天依Love
+        description: 歌曲推荐网站
+        icon: luotianyi.love.png
+        url: https://www.luotianyi.love/
+      - name: VC音乐推荐网
+        description: 歌曲推荐网站
+        icon: vcmusic.png
+        url: https://www.vcmusic.top/
+      - name: 依の后花园
+        description: V次元-依の后花园
+        icon: tybbs.svg
+        url: https://bbs.66ccff.cc/
+  - name: 官方网站
+    sites:
+      - name: Vocaloid
+        icon: vocaloid.png
+        url: https://www.vocaloid.com/
+      - name: Dreamtonics
+        icon: synthv.png
+        url: https://dreamtonics.com/
+      - name: ACE Studio
+        icon: acestudio.png
+        url: http://ace-studio.timedomain.cn/
+      - name: Vsinger
+        icon: https://vsinger.com/favicon.ico
+        url: https://vsinger.com/
+        white_background: true
+      - name: 初音未来
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i2.hdslb.com/bfs/face/e6c83e92c8c2b5af89c64eea3acbc328c8e4eca1.jpg
+        url: https://weibo.com/mikucfm
+      - name: 洛天依
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/9a629a3a6f941546170ae93b605f3abad7cf5632.jpg
+        url: https://weibo.com/luotianyi0712
+      - name: 言和
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/b04221435adbbb69f1751a9a7e82acf37e346165.jpg
+        url: https://weibo.com/yanheproject
+      - name: 心华
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/7e0f2f125900f5367d1dcc0f19de20b0c3d7007e.jpg
+        url: https://weibo.com/vocaloidxinhua
+      - name: 乐正绫
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/4c621b52d13b28502cc88208898451b952126aa9.jpg
+        url: https://weibo.com/yuezhengling
+      - name: 星尘
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/30999035955895b80c3f101cd31bc979b19ab6e7.jpg
+        url: https://weibo.com/stardustofficial
+      - name: 乐正龙牙
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i0.hdslb.com/bfs/face/b372a61e0d29979153c461fab927c81a54cabe35.jpg
+        url: https://weibo.com/yuezhenglongya0712
+      - name: 徵羽摩柯
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/fc919ecce9d6e9bcbf65e9da6d3dc5c923791999.jpg
+        url: https://weibo.com/zhiyumoke
+      - name: 墨清弦
+        description: 官方微博
+        icon_effects: [circle]
+        icon: https://i0.hdslb.com/bfs/face/8ffda90654e7a9da1b2c77c38afffbc3bf02e47b.jpg
+        url: https://weibo.com/moqingxian0712
+      - name: 初音未来
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i2.hdslb.com/bfs/face/e6c83e92c8c2b5af89c64eea3acbc328c8e4eca1.jpg
+        url: https://space.bilibili.com/399918500/
+      - name: 洛天依
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/9a629a3a6f941546170ae93b605f3abad7cf5632.jpg
+        url: https://space.bilibili.com/36081646/
+      - name: 言和
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/b04221435adbbb69f1751a9a7e82acf37e346165.jpg
+        url: https://space.bilibili.com/406948276/
+      - name: 心华
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/7e0f2f125900f5367d1dcc0f19de20b0c3d7007e.jpg
+        url: https://space.bilibili.com/188839285/
+      - name: 乐正绫
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/4c621b52d13b28502cc88208898451b952126aa9.jpg
+        url: https://space.bilibili.com/406948651/
+      - name: 星尘
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/30999035955895b80c3f101cd31bc979b19ab6e7.jpg
+        url: https://space.bilibili.com/15817819/
+      - name: 乐正龙牙
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i0.hdslb.com/bfs/face/b372a61e0d29979153c461fab927c81a54cabe35.jpg
+        url: https://space.bilibili.com/406948857/
+      - name: 徵羽摩柯
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i1.hdslb.com/bfs/face/fc919ecce9d6e9bcbf65e9da6d3dc5c923791999.jpg
+        url: https://space.bilibili.com/406949083/
+      - name: 墨清弦
+        description: 官方BiliBili账号
+        icon_effects: [circle]
+        icon: https://i0.hdslb.com/bfs/face/8ffda90654e7a9da1b2c77c38afffbc3bf02e47b.jpg
+        url: https://space.bilibili.com/406950978/
+      - name: 夏语遥
+        description: 官方推特
+        icon_effects: [circle]
+        icon: xiayuyao.jpg
+        url: https://twitter.com/yuyaoofficial
