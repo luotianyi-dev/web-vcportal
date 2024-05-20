@@ -142,7 +142,7 @@ name = "portal"
 version = "1.0.5"
 requires_python = ">=3.9"
 git = "https://github.com/baobao1270/portal.git"
-revision = "d449f5ce99f91093d9b208ea369ab2622cb252c6"
+revision = "adfd5c521ec9a97f54352957265ec5ac85bcb389"
 summary = "An unified portal for listing URLs"
 groups = ["default"]
 dependencies = [
