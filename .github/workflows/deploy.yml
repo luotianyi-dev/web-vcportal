@@ -21,8 +21,9 @@ jobs:
         uses: pdm-project/setup-pdm@v4
         with:
           python-version: '3.11'
+          version: '2.15.2'
       - name: Install Dependencies
-        run: pdm install && pdm add git+https://github.com/luotianyi-dev/deploykit.git
+        run: pdm install && pdm add "deploykit @ git+https://github.com/luotianyi-dev/deploykit.git"
       - name: Set S3 Prefix
         run: echo "S3_PREFIX=web/host/$PROJECT/$(date +%Y%m%d-%H%M%S)-${{ github.sha }}" >> $GITHUB_ENV
       - name: Build
